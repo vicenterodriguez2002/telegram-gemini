@@ -1,0 +1,19 @@
+{
+  "name": "telegram",
+  "version": "1.0.0",
+  "description": "En este proyecto construire una api a telegram con respuestas de IA de google ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "Vicente Rodriguez Cancino",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "https": "^1.0.0",
+    "nodemon": "^3.1.9",
+    "telegraf": "^4.16.3"
+  }
+}
