@@ -200,6 +200,16 @@ console.log("Bot funcionando con Long Polling");
 process.once("SIGINT", () => bot.stop("SIGINT"));
 process.once("SIGTERM", () => bot.stop("SIGTERM"));
 
+async function saludar(req,res) {
+    
+res.json({
+
+    Saludo: "Hola espero que estes bien",
+    mensaje:"Esta es mi primera API"
+
+})
+
+}
 
 
 app.post("/send", enviarMensaje);
@@ -210,6 +220,7 @@ app.get('/send', async function retornar(req,res) {
     });
 
 });
+app.get('/', saludar);
 
 
 
